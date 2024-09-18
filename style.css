@@ -16,6 +16,7 @@
     align-items: center;
 }
 
+
 .header_info > *{
     
     flex: 1;
@@ -118,14 +119,15 @@ color:#F9FaF8;
     justify-content: center;
     margin: 15px 350px;
     text-align: center;
+    gap: 16px;
 
 }
 
 .box{
     border: 3px solid rgb(115, 115, 133);
     border-radius: 8px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .box_info{
