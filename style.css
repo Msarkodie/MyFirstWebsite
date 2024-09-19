@@ -17,12 +17,63 @@
 }
 
 
+/*header style*/
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header_right{
+    font-size: 24px;
+    color:#F9FaF8 ;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+/*header information styles*/
+
 .header_info > *{
     
     flex: 1;
 }
 
+.header_info{
+    display: flex;
 
+    padding-top: 50px;
+}
+
+.text_info{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fir_info{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FaF8;
+}
+.sec_text, .header_left{
+    font-size: 18px;
+    color:#E5E7EB
+
+}
+
+.button button{
+    flex-grow: 0;
+    padding:4px 18px;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color:#F9FaF8;
+    }
 
 .image_placeholder{
     background-color: rgb(139, 133, 139);
@@ -38,46 +89,49 @@
     height: 100%;
 }
 
+
+/*Website information*/
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rand_info{
+    font-size: 32px;
+    color: #1F2937;
+    font-weight: 90px;
+}
+
+.box_collective{
+    display: flex;
+    justify-content: center;
+    margin: 15px 350px;
+    text-align: center;
+    gap: 16px;
+
+}
+
+.box_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .box_info .box img{
     width: 100%;
     height: 100%;
 }
 
-
-.header{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.header_info{
-    display: flex;
-
-    padding-top: 50px;
+.box{
+    border: 3px solid rgb(115, 115, 133);
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
 }
 
-.text_info{
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.fir_info{
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FaF8;
-}
-.sec_text, .header_left{
-    font-size: 18px;
-    color:#E5E7EB
-
-}
-
-.header_right{
-    font-size: 24px;
-    color:#F9FaF8 ;
-}
-
+/*Quote Section*/
 .quote_section{
     background-color: #E5E7EB;
     padding: 60px 450px;
@@ -97,54 +151,34 @@
     font-weight: 900;
 }
 
-ul{
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
 
-.button button{
-flex-grow: 0;
-padding:4px 18px;
-border-radius: 8px;
-background-color: #3882F6;
-color:#F9FaF8;
-}
+/*Action Section*/
 
-.information{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.box_collective{
-    display: flex;
-    justify-content: center;
-    margin: 15px 350px;
-    text-align: center;
-    gap: 16px;
 
-}
 
-.box{
-    border: 3px solid rgb(115, 115, 133);
-    border-radius: 8px;
-    width: 200px;
-    height: 200px;
-}
 
-.box_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-}
 
-.rand_info{
-    font-size: 32px;
-    color: #1F2937;
-    font-weight: 90px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .action_lane{
     margin: 50px 300px;
@@ -173,13 +207,13 @@ color:#F9FaF8;
     }
 
 button{
-    background-color: #3882F6;
-    padding: 2px 18px;
-    color: #F9FaF8;
-    border: 1px solid #E5E7EB;
-    border-radius: 8px;
-    flex-shrink: 0;
-}
+        background-color: #3882F6;
+        padding: 2px 18px;
+        color: #F9FaF8;
+        border: 1px solid #E5E7EB;
+        border-radius: 8px;
+        text-align: center;
+    }
 
 .footer{
     background-color: #1F2937;
@@ -188,6 +222,8 @@ button{
     padding: 16px;
 }
 
+
+/*media style*/
 @media screen and (max-width:865px)
 {
 .box_collective, .header_info, .header_left, .action_lane {
